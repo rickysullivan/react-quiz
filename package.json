@@ -1,0 +1,41 @@
+{
+  "name": "react-quiz",
+  "version": "0.0.1",
+  "description": "A simple quiz built with Node and React",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently --kill-others --kill-others-on-fail \"npm run server\" \"npm run client\"",
+    "server": "BROWSER=none node server/index.js",
+    "client": "react-scripts start"
+  },
+  "author": "Ricky Sullivan",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-eslint": "^8.2.1",
+    "concurrently": "^3.5.1",
+    "eslint": "^4.17.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-prettier": "^2.6.0",
+    "eslint-plugin-react": "^7.6.1",
+    "prettier": "^1.10.2",
+    "react-scripts": "^1.1.1"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "helmet": "^3.11.0",
+    "nedb": "^1.8.0",
+    "nedb-promise": "^2.0.1",
+    "prop-types": "^15.6.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "semantic-ui-css": "^2.2.14",
+    "semantic-ui-react": "^0.78.2"
+  },
+  "engines": {
+    "node": ">=9.4.0"
+  }
+}
